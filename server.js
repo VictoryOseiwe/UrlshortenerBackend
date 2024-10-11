@@ -30,6 +30,7 @@ const sequelize = new Sequelize(
         rejectUnauthorized: false,
       },
     },
+    dialectModule: pg,
   }
 );
 
