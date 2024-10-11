@@ -63,7 +63,7 @@ sequelize.sync().then(() => {
 //Api route to shorten url
 app.post("/shorten", async (req, res) => {
   const { originalUrl } = req.body;
-  const shortenedUrl = nanoid(8);
+  const shortenedUrl = nanoid(3);
 
   try {
     const newUrl = await Url.create({ originalUrl, shortenedUrl });
