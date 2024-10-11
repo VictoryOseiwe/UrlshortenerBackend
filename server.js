@@ -4,6 +4,7 @@ import { Sequelize, DataTypes } from "sequelize";
 import { nanoid } from "nanoid";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
+import pg from "pg";
 dotenv.config();
 
 //desclaration of variables and also loading of environment variables
